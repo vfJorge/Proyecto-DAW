@@ -1,5 +1,6 @@
 # Proyecto DAW
-<b align="center">Proyecto para asignatura "Desarrollo de Aplicaciones Web"</b><br>
+<b align="center">Proyecto para la asignatura "Desarrollo de Aplicaciones Web"</b><br>
+
 <p>Miembros del equipo:</p>
 Vicente Nava
 <img  src="https://user-images.githubusercontent.com/61719874/131425578-1c248a85-5b81-40aa-ab50-a8e5a4cf4737.jpeg" width=20% height=20%>
