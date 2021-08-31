@@ -3,7 +3,7 @@
 
 <p>Miembros del equipo:</p>
 Vicente Nava
-<img  src="https://user-images.githubusercontent.com/61719874/131425578-1c248a85-5b81-40aa-ab50-a8e5a4cf4737.jpeg" width=20% height=20%>
+<img  src="https://user-images.githubusercontent.com/61719874/131428037-5e4ea849-a4ef-44a3-9211-ed1d2718583f.jpeg" width=20% height=20%>
 Rodrigo Pantoja
 <img  src="https://user-images.githubusercontent.com/61719874/131425597-af2166b4-2805-4933-ad01-5e77dc97dae5.jpeg" width=20% height=20%>
 Jorge Vázquez
