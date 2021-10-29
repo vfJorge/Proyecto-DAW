@@ -2,72 +2,466 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="styles/sucursalesStyles.css" type="text/css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
 <header>
-    <nav>
-        <a href="#section1">INICIO</a>
-        <a class="active" href="#section2">COLA</a>
-        <a class="nav-element" href="#section3">MENÚ</a>
-        <a class="nav-element" href="#">RESERVAR</a>
-        <a class="nav-element" href="#">
-            <img src= "images/login.png" id="login-icon">
-        </a>
+    <nav class="navbar navbar-expand-sm text-white navbar-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item me-1">
+                        <a class="nav-link rounded" href="#section1">INICIO</a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a class="nav-link rounded" href="#section2">CONOCER</a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a class="nav-link rounded" href="#section3">MENÚ</a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a class="nav-link rounded" href="sucursales.html">SUCURSALES</a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a class="nav-link rounded text-white" id="reservarNav" href="reservacion.html">RESERVAR</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a class="nav-item navbar-brand" data-bs-toggle="offcanvas" data-bs-target="#userInfoOffCanvas" >
+                <img src="images/login.png" alt="Imagen de usuario" class="rounded-pill userImage" style="width: 40px" >
+            </a>
+
+        </div>
     </nav>
 </header>
-<div id="sections-container">
-    <section id="section1">
-        <div id="main-text-container">
-            <div>
-                <h1>STEAK HOUSE</h1>
-                <h2>PREMIUM BUFFET RESTAURANT</h2>
-            </div>
 
+<div id="section1" class="bg-image" >
+    <div class="darkenMask">
+        <div class=" container-fluid m-0 p-5 row">
+        <div class="col-sm-6 align-items-center flex-column justify-content-center text-white text-center d-none d-md-flex">
+            <h1>STEAK HOUSE</h1>
+            <h2>PREMIUM BUFFET RESTAURANT</h2>
         </div>
-        <div id="main-logo-container">
-            <img src="images/logo.png" alt="Logo steak house">
+        <div class="col-12 col-md-6 d-flex align-items-start flex-column justify-content-center">
+            <img class="mx-auto d-block img-fluid w-50" src="images/logo.png" alt="Logo Steak House">
         </div>
-    </section>
-    <section id="section2">
-        <div id="sec2-center">
-            <div class="sec2-center-elem">
-                <video autoplay muted loop>
-                    <source src="videos/about.mp4" type="video/mp4">
-                    Tu navegador no soporta videos HTML5
-                </video>
-                <p>Acerca de</p>
-                <button>CONÓCENOS</button>
-            </div>
-            <div class="sec2-center-elem">
-                <video autoplay muted loop>
-                    <source src="videos/chef.mp4" type="video/mp4">
-                    Tu navegador no soporta videos HTML5
-                </video>
-                <p>A disfrutar</p>
-                <button>RESERVAR</button>
-            </div>
-            <div class="sec2-center-elem">
-                <video autoplay muted loop>
-                    <source src="videos/gallery.mp4" type="video/mp4">
-                    Tu navegador no soporta videos HTML5
-                </video>
-                <p>Galería</p>
+        </div>
+    </div>
 
-                <button>VER</button>
+</div>
+
+<div id="section2" class="container-fluid row m-0 p-0 align-items-center justify-content-center" >
+
+    <div class="col-md-4 p-4 " >
+        <div class="card text-white p-0 bg-transparent">
+            <video autoplay muted loop class="card-img-top p-0 m0">
+                <source src="videos/about.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5
+            </video>
+            <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column">
+                <h2 class="card-title">Acerca de</h2>
+                <p class="card-text">El mejor restaurante de cortes de carne desde 2010</p>
+                <a href="#section2" class="btn" data-bs-toggle="modal" data-bs-target="#historiaModal"> CONÓCENOS</a>
             </div>
         </div>
 
+    </div>
 
-    </section>
-    <section id="section3"></section>
+    <div class="col-md-4 p-4">
+        <div class="card text-white p-0 m-0 bg-transparent">
+            <video autoplay muted loop class="card-img-top">
+                <source src="videos/chef.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5
+            </video>
+            <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column flex-grow-1">
+                <h2 class="card-title">A disfrutar</h2>
+                <p class="card-text">Siempre hay una mesa disponible para ti</p>
+                <a href="reservacion.html" class="btn">RESERVAR</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 p-4">
+        <div class="card text-white p-0 bg-transparent">
+            <video autoplay muted loop class="card-img-top">
+                <source src="videos/gallery.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5
+            </video>
+            <div class="card-img-overlay  d-flex align-items-center justify-content-center flex-column">
+                <h2 class="card-title">Sucursales</h2>
+                <p class="card-text">Contamos con sucursales en todo México</p>
+                <a href="sucursales.html" class="btn">VER</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<div id="section3" class="m-0 p-0 d-flex justify-content-center align-items-center">
+
+    <div id="menuCarrusel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+
+        <div class="carousel-indicators m-0 mb-3 mb-sm-3 mb-xl-4">
+            <button type="button" data-bs-target="#menuCarrusel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#menuCarrusel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#menuCarrusel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#menuCarrusel" data-bs-slide-to="3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container-fluid pt-5 pb-2 d-flex justify-content-center align-items-center text-white">
+                        <div class="container-fluid m-0 p-0  w-75 h-75">
+                        <div class="row m-0">
+                            <div class="col-md-12 m-0 py-lg-2 px-lg-5 py-sm-1 px-sm-3">
+                                <h5 class="text-muted">MENÚ</h5>
+                                <h1 class="m-0 p-0 ">DESAYUNO</h1>
+                            </div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-md-8 m-0  p-5">
+                                <img class="img-fluid m-0 " src="images/carrusel/desayuno.jpg" alt="Desayunos">
+                            </div>
+                            <ul class="col-md-4 list-group m-0 ps-0 pb-5 px-md-2 py-md-5">
+                                    <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                        <h6>Huevos a la mexicana</h6>
+                                        <h6><span class="badge badge-info">$79.00</span></h6>
+                                    </li>
+                                    <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                        <h6>Chorizo argentino</h6>
+                                        <h6><span class="badge badge-info">$119.00</span></h6>
+                                    </li>
+                                    <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                        <h6>Chistorra</h6>
+                                        <h6><span class="badge badge-info">$119.00</span></h6>
+                                    </li>
+                                    <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                        <h6>Pan tostado con mantequilla</h6>
+                                        <h6><span class="badge badge-info">$49.00</span></h6>
+                                    </li>
+                                    <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                        <h6>Molletes con chorizo</h6>
+                                        <h6><span class="badge badge-info">$69.00</span></h6>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container-fluid pt-5 pb-2 d-flex justify-content-center align-items-center text-white">
+                    <div class="container-fluid m-0 p-0  w-75 h-75">
+                        <div class="row m-0">
+                            <div class="col-md-12 m-0 py-lg-2 px-lg-5 py-sm-1 px-sm-3">
+                                <h5 class="text-muted">MENÚ</h5>
+                                <h1 class="m-0 p-0 ">COMIDA</h1>
+                            </div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-md-8 m-0  p-5">
+                                <img class="img-fluid m-0 " src="images/carrusel/comida.jpg" alt="Comida">
+                            </div>
+                            <ul class="col-md-4 list-group m-0 ps-0 pb-5 px-md-2 py-md-5">
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Chuletón</h6>
+                                    <h6><span class="badge badge-info">$99.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Hígado de ternera</h6>
+                                    <h6><span class="badge badge-info">$109.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Corte Baby Sirloin</h6>
+                                    <h6><span class="badge badge-info">$149.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Picanha</h6>
+                                    <h6><span class="badge badge-info">$179.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Corte estilo americano</h6>
+                                    <h6><span class="badge badge-info">$99.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Chuleta de cerdo</h6>
+                                    <h6><span class="badge badge-info">$99.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Pollo rostizado</h6>
+                                    <h6><span class="badge badge-info">$89.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Parrillada House Steak</h6>
+                                    <h6><span class="badge badge-info">$339.00</span></h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container-fluid pt-5 pb-2 d-flex justify-content-center align-items-center text-white">
+                    <div class="container-fluid m-0 p-0  w-75 h-75">
+                        <div class="row m-0">
+                            <div class="col-md-12 m-0 py-lg-2 px-lg-5 py-sm-1 px-sm-3">
+                                <h5 class="text-muted">MENÚ</h5>
+                                <h1 class="m-0 p-0 ">CENA</h1>
+                            </div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-md-8 m-0  p-5">
+                                <img class="img-fluid m-0 " src="images/carrusel/cena.jpg" alt="Cena">
+                            </div>
+                            <ul class="col-md-4 list-group m-0 ps-0 pb-5 px-md-2 py-md-5">
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Chistorra con queso</h6>
+                                    <h6><span class="badge badge-info">$80.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Rib eye</h6>
+                                    <h6><span class="badge badge-info">$249.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Sirloin</h6>
+                                    <h6><span class="badge badge-info">$169.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Filete mignon</h6>
+                                    <h6><span class="badge badge-info">$199.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Asado de tira</h6>
+                                    <h6><span class="badge badge-info">$199.00</span></h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container-fluid pt-5 pb-2 d-flex justify-content-center align-items-center text-white">
+                    <div class="container-fluid m-0 p-0  w-75 h-75">
+                        <div class="row m-0">
+                            <div class="col-md-12 m-0 py-lg-2 px-lg-5 py-sm-1 px-sm-3">
+                                <h5 class="text-muted">MENÚ</h5>
+                                <h1 class="m-0 p-0 ">POSTRES</h1>
+                            </div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-md-8 m-0 p-5">
+                                <img class="img-fluid m-0  " src="images/carrusel/postres.jpg" alt="Postres">
+                            </div>
+                            <ul class="col-md-4 list-group m-0 ps-0 pb-5 px-md-2 py-md-5">
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Pay de frambuesa</h6>
+                                    <h6><span class="badge badge-info">$89.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Brownie de chocolate</h6>
+                                    <h6><span class="badge badge-info">$109.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Muffin relleno</h6>
+                                    <h6><span class="badge badge-info">$69.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Helado</h6>
+                                    <h6><span class="badge badge-info">$39.00</span></h6>
+                                </li>
+                                <li class="list-group-item text-white bg-black d-flex justify-content-between align-items-start">
+                                    <h6>Pastel de cumpleaños</h6>
+                                    <h6><span class="badge badge-info">$259.00</span></h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#menuCarrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#menuCarrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+</div>
+
+<footer class="h-25 p-5 d-flex justify-content-center align-items-center flex-column text-center">
+    <div class="d-flex justify-content-center align-items-center h-100 mb-3">
+        <i class="bi-facebook text-white  px-2" role="img" aria-label="Facebook"></i>
+        <i class="bi-instagram text-white  px-2" role="img" aria-label="Instagram"></i>
+        <i class="bi-twitter text-white px-2" role="img" aria-label="Twitter"></i>
+        <i class="bi-whatsapp text-white px-2" role="img" aria-label="Whatsapp"></i>
+        <i class="bi-telephone text-white px-2" role="img" aria-label="Telefono"></i>
+    </div>
+
+    <p class="text-white-50 m-0 px-4">House Steak. La casa de la carne</p>
+    <p class="text-white-50 m-0 px-4">Copyright &copy; 2010-2021. Todos los derechos reservados</p>
+
+</footer>
+
+</body>
+
+<div class="modal fade" id="historiaModal">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content text-white">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h1 class="modal-title p-4">STEAK HOUSE</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body p-4">
+
+                <h2>Historia</h2>
+                <img src="images/historia.jpg" alt="Creador" class="img-fluid p-3 pt-0 d-none d-lg-block float-end w-25">
+                <p>Somos una empresa fundada el 28 de julio de 2010, con alto conocimiento en la producción y venta de cortes finos de carne, la experiencia adquirida a través de los años, nos da el conocimiento para valorar la importancia del cliente, quien es el motivo de nuestros esfuerzos, y así llegar a ustedes con la seguridad de poder ofrecerles un desayuno, comida o cena de excelente calidad con responsabilidad y cumplimiento. El hecho de contar con ustedes como nuestros clientes es motivo de satisfacción.</p>
+                <h4>Misión</h4>
+                <p>En Steak House tenemos como misión darle la excelencia a nuestros productos de carne con alta calidad, nutritivos, sanos y frescos, en función de satisfacer las necesidades del consumo, proporcionando en forma permanente bienestar y calidad de vida. Entregamos a nuestros consumidores los productos que ellos prefieren y eligen por nuestra calidad y presentación.</p>
+                <h4>Visión</h4>
+                <p>Nuestra visión es consolidarnos como la mejor empresa a nivel nacional, en cuanto a la producción y venta de cortes finos de carne, apoyándonos en instalaciones con la más alta tecnología para el manejo de nuestros productos. Contamos con personal altamente calificado, manteniendo nuestro riguroso y estricto control de calidad.</p>
+
+                <div class="d-flex justify-content-end w-100">
+                    <div class="d-flex flex-column w-25">
+                        <img src="images/firma.png" alt="Firma del creador" class="p-3" style="filter: invert(80%)">
+                        <p class="blockquote-footer p-3">Raúl Macizo - Fundador y CEO de Steak House</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer border border-0">
+                <button type="button" class="btn text-muted " data-bs-dismiss="modal">Entendido</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade registerModal" id="registerModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-white">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Ingresa los datos para crear tu cuenta</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body ">
+                <form  class="was-validated" action="#" >
+                    <div class="mb-3 mt-3 form-group" >
+                        <label for="user-name" class="form-label">Nombre (s):</label>
+                        <input type="text" class="form-control" id="user-name" placeholder="Nombre (s)" name="user-name" required>
+                        <div class="invalid-feedback">Ingrese nombre(s)</div>
+                    </div>
+
+                    <div class="mb-3 mt-3 form-group" >
+                        <label for="apellido-pat" class="form-label">Apellido paterno</label>
+                        <input type="text" class="form-control" id="apellido-pat" placeholder="Apellido paterno" name="apellido-pat" required>
+                        <div class="invalid-feedback">Debe ingresar un apellido</div>
+                    </div>
+
+                    <div class="mb-3 mt-3 form-group" >
+                        <label for="apellido-mat" class="form-label">Apellido materno</label>
+                        <input type="text" class="form-control" id="apellido-mat" placeholder="Apellido materno" name="apellido-mat" required>
+                        <div class="invalid-feedback">Debe ingresar un apellido</div>
+                    </div>
+
+                    <div class="mb-3 mt-3 form-group" >
+                        <label for="celular" class="form-label">Celular:</label>
+                        <input type="tel" class="form-control" id="celular" name="celular" placeholder="0123456789" pattern="[0-9]{10}" required>
+                        <div class="invalid-feedback">Número de teléfono inválido</div>
+                    </div>
+
+                    <div class="mb-3 mt-3 form-group" >
+                        <label for="email" class="form-label">Correo:</label>
+                        <input type="email" class="form-control" id="email-form" placeholder="correo@electronico" name="email" required>
+                        <div class="valid-feedback">Correo electrónico válido</div>
+                        <div class="invalid-feedback">Correo electrónico inválido</div>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label for="password-login" class="form-label">Ingrese un contraseña, solo se permiten valores alfanuméricos</label>
+                        <input type="password" class="form-control" id="password-login" placeholder="********" name="password-login" pattern="[A-Za-z0-9]{8,}"  required>
+                        <div class="invalid-feedback">La contraseña es muy corta<br>Ingrese una contraseña de al menos 8 caracteres</div>
+                    </div>
+
+
+                    <div class="d-grid">
+                        <button type="submit" class="mt-2 p-3 btn-primary btn-block text-center">REGISTRARSE</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer border border-0">
+                <button type="button" class="btn text-muted " data-bs-dismiss="modal">Cancelar</button>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 
 
+<div class="offcanvas offcanvas-end text-white p-3" id="userInfoOffCanvas">
+    <div class="offcanvas-header">
+        <div class="d-flex flex-fill justify-content-between align-items-center pe-2">
+            <h1 class="offcanvas-title">Bienvenido</h1>
+            <img class="img-fluid userImage" src="images/login.png" alt="Imagen de usuario" style="width: 40px">
+        </div>
 
-</body>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body py-0 text-left">
+        <form action=#>
+            <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Correo:</label>
+                <input type="email" class="form-control" id="email" placeholder="Correo" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="pwd" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Recordarme
+                </label>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="my-2 p-2 btn-primary btn-block text-center" onclick="alert('BACKEND')">INICIAR SESIÓN</button>
+            </div>
+        </form>
+        <div class="d-flex justify-content-center align-items-center text-center">
+            <p class="text-muted my-3 mx-2">¿No tienes una cuenta?</p>
+            <a class="my-3 mx-2 text-decoration-underline" data-bs-toggle="modal" data-bs-target="#registerModal">Crea una</a>
+        </div>
+    </div>
+</div>
+
+
 </html>
