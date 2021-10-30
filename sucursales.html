@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="styles/sucursalesStyles.css"  type="text/css">
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="scripts/cookieMethods.js"></script>
+
+<script type="text/javascript" src="scripts/scriptSucursales.js">
+
+    
+</script>
+<title>Sucursales</title>
+</head>
+<body>
+<div id="cuerpo" class="row   p-0 m-0">
+
+
+        <div class="p-0 m-0 list-group d-flex flex-column col-3" id="barraSucursales">
+            <a class="list-group-item list-group-item-action" id="suc1" onclick="verSucursal(1)"></a>
+            <a class="list-group-item list-group-item-action" id="suc2" onclick="verSucursal(2)"></a>
+            <a class="list-group-item list-group-item-action" id="suc3" onclick="verSucursal(3)"></a>
+            <a class="list-group-item list-group-item-action" id="suc4" onclick="verSucursal(4)"></a>
+            <a class="list-group-item list-group-item-action" id="suc5" onclick="verSucursal(5)"></a>
+            <a class="list-group-item list-group-item-action" id="suc6" onclick="verSucursal(6)"></a>
+            <a class="list-group-item list-group-item-action" id="suc7" onclick="verSucursal(7)"></a>
+            <a class="list-group-item list-group-item-action" id="suc8" onclick="verSucursal(8)"></a>
+            <a class="list-group-item list-group-item-action" id="suc9" onclick="verSucursal(9)"></a>
+            <a class="list-group-item list-group-item-action" id="suc10" onclick="verSucursal(10)"></a>
+        </div>
+
+
+
+    <div class="row col-9 m-0 p-0">
+        <div id="sucursal" class="p-4 m-0 text-white col-0 col-lg-7 d-flex flex-column">
+            <div id="sucursalElement" class="p-2 pb-4">
+                <h1 id="sucursalTitulo"></h1>
+                <p id="sucursalDesc" class="container-fluid px-0"></p>
+                <p id="sucursalDir" class="container-fluid px-0"></p>
+                <p id="sucursalTel" class="container-fluid px-0"></p>
+
+                <div class="button-group d-grid gap-3 w-50">
+                    <button type="button" id="hacerReservacion" class="btn btn-primary"><h4>Reservar en esta sucursal</h4></button>
+                    <button type="button" id="addFavoritos"></button>
+                    <a href="index.html" type="button" id="regresar" class="btn btn-outline-danger">Regresar a inicio</a>
+
+                </div>
+
+
+            </div>
+            <div id="sucursalImg" class="p-0 m-0 flex-grow-1 d-flex justify-content-center align-items-center">
+
+            </div>
+
+        </div>
+
+        <div id="mapaSucursal" class="col-12 col-lg-5 m-0 p-4 d-none d-lg-block">
+
+        </div>
+    </div>
+
+
+</div>
+</body>
+
+</html>

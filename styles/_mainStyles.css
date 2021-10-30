@@ -1,0 +1,173 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+* {
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  background-color: #131111;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+#user-image {
+  cursor: pointer;
+}
+
+#reservarNav {
+  background-color: #cc741f;
+  color: black;
+}
+
+.nav-link {
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link:hover {
+  background-color: white !important;
+  color: black !important;
+}
+.nav-link.active {
+  border: 2px rgba(255, 255, 255, 0.65) solid;
+}
+
+.offcanvas {
+  background-color: #131111;
+}
+
+#section1 {
+  background-image: url(../images/restaurante.png);
+  background-size: cover;
+}
+#section1 h1 {
+  font-size: 4rem;
+}
+#section1 h2 {
+  font-size: 2rem;
+}
+
+.darkenMask {
+  background-color: rgba(0, 0, 0, 0.4);
+  min-height: 90vh;
+}
+.darkenMask .row {
+  min-height: inherit;
+}
+
+#section2 {
+  min-height: 90vh;
+}
+#section2 .col-md-4 {
+  min-height: 25vh;
+}
+#section2 .col-md-4 .card {
+  height: 60vh;
+  border-radius: 10px;
+}
+#section2 .col-md-4 .card .card-img-overlay {
+  padding: 20%;
+  text-align: center;
+}
+#section2 .col-md-4 .card video {
+  border-radius: 10px;
+  height: inherit;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+#section2 .btn {
+  border: 3px solid #cc741f;
+  background-color: transparent;
+  color: white;
+}
+#section2 .btn:hover {
+  border: 3px solid white;
+  background-color: white;
+  color: black;
+}
+
+#section3 {
+  min-height: 100vh;
+  background-color: black;
+}
+#section3 .list-group-item {
+  padding: 0;
+  margin: 0;
+}
+#section3 .badge {
+  font-size: 0.9rem;
+  background-color: #ED1C24;
+}
+
+#userInfoOffCanvas {
+  box-sizing: border-box;
+}
+#userInfoOffCanvas a {
+  background-color: transparent;
+  border: none;
+  color: #cc741f;
+}
+#userInfoOffCanvas a:hover {
+  cursor: pointer;
+  color: #0a53be;
+}
+#userInfoOffCanvas button:not(.btn-close) {
+  background: #cc741f;
+  border: 3px solid #cc741f;
+}
+#userInfoOffCanvas button:not(.btn-close):hover {
+  border: 3px solid white;
+  background-color: white;
+  color: black;
+}
+
+#registerModal .modal-header {
+  background: linear-gradient(90deg, #fd451d 0%, #fcb045 100%);
+  border: none;
+}
+#registerModal .modal-content {
+  background-color: #131111;
+}
+#registerModal .modal-content button[type=submit] {
+  background: #cc741f;
+  border: 3px solid #cc741f;
+}
+#registerModal .modal-content button[type=submit]:hover {
+  border: 3px solid white;
+  background-color: white;
+  color: black;
+}
+#registerModal .btn {
+  background-color: transparent;
+}
+
+#historiaModal .modal-header {
+  background: linear-gradient(90deg, #fd451d 0%, #fcb045 100%);
+  border: none;
+}
+#historiaModal .modal-content {
+  background-color: #131111;
+}
+#historiaModal .modal-content button[type=submit] {
+  background: #cc741f;
+  border: 3px solid #cc741f;
+}
+#historiaModal .modal-content button[type=submit]:hover {
+  border: 3px solid white;
+  background-color: white;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  #section1 .darkenMask {
+    min-height: 50vh;
+  }
+}
+
+/*# sourceMappingURL=mainStyles.css.map */

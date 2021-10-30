@@ -1,0 +1,272 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$blackTransparent: rgba(0,0,0,0.65);
+$whiteTransparent: rgba(255,255,255,0.45);
+$fancyRed : #ED1C24;
+$mainFont: Montserrat, sans-serif;
+$secondaryFont: 'Lato', sans-serif;
+$background: url(../images/restaurante.png);
+$fancyBlack: #131111;
+$fancyShadow: 0 10px 25px -10px rgba(0, 0, 0, 0.75);
+$buttonColor: #cc741f;
+$orangeGradient: linear-gradient(90deg, rgba(253,69,29,1) 0%, rgba(252,176,69,1) 100%);
+$redBlackGradient: linear-gradient(90deg, rgba(226,26,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);;
+$fancyBlackBlackGradient: linear-gradient(90deg, $fancyBlack 0%, rgba(0,0,0,1) 100%);
+
+
+@import "../bootstrap-icons/font/bootstrap-icons.css";
+
+@mixin perfectCentering{
+  justify-content: center;
+  align-items: center;
+}
+
+*{
+
+  font-family: $mainFont;
+}
+
+body{
+  background-color: $fancyBlack;
+}
+
+
+.navbar{
+  background-color: $blackTransparent;
+
+}
+
+.userImage{
+  cursor: pointer;
+}
+
+#reservarNav{
+  background-color: $buttonColor;
+  color: black;
+}
+
+.nav-link {
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  @include perfectCentering;
+
+  &:hover {
+    background-color: white !important;
+    color: black !important;
+  }
+  &.active{
+    border: 2px $whiteTransparent solid;
+  }
+
+}
+
+.offcanvas{
+  background-color: $fancyBlack;
+}
+
+
+#section1{
+  background-image: $background;
+  background-size: cover;
+  h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+}
+
+.darkenMask{
+  background-color: rgba(0,0,0,0.40);
+  min-height: 90vh;
+  .row{
+    min-height: inherit;
+  }
+}
+
+
+
+#section2{
+
+  min-height: 90vh;
+
+  .col-md-4{
+    min-height: 25vh;
+
+    .card{
+      height: 60vh;
+      border-radius: 10px;
+
+      .card-img-overlay{
+        padding: 20%;
+        text-align: center;
+      }
+
+      video{
+        border-radius: 10px;
+        height: inherit;
+        object-fit: cover;
+        filter: brightness(40%);
+      }
+    }
+  }
+
+  .btn{
+    border: 3px solid $buttonColor;
+    background-color: transparent;
+    color: white;
+    &:hover{
+
+      border: 3px solid white;
+      background-color: white;
+      color: black ;
+    }
+  }
+}
+
+#section3{
+  min-height: 100vh;
+  background-color: black;
+
+  .list-group-item{
+    padding: 0;
+    margin: 0;
+  }
+  .badge{
+    font-size: 0.8rem;
+    background-color: $fancyRed;
+  }
+
+  .carousel{
+
+    img{
+      border-radius: 15px;
+      object-fit: cover;
+      width: 75vw;
+      height: 50vh;
+    }
+
+  }
+
+
+}
+
+#userInfoOffCanvas{
+
+  box-sizing: border-box;
+  p{
+    font-family: $secondaryFont;
+  }
+  a{
+    font-family: $secondaryFont;
+    background-color: transparent;
+    border: none;
+    color: $buttonColor;
+
+    &:hover{
+      cursor: pointer;
+      color: #0a53be;
+    }
+
+  }
+
+  button:not(.btn-close){
+    background: $buttonColor;
+    border: 3px solid $buttonColor;
+    &:hover{
+
+      border: 3px solid white;
+      background-color: white;
+      color: black ;
+    }
+  }
+
+}
+
+#registerModal{
+
+  .modal-header{
+    background: $orangeGradient;
+    border: none;
+  }
+
+  .modal-content {
+    background-color: $fancyBlack;
+    button[type=submit]{
+      background: $buttonColor;
+      border: 3px solid $buttonColor;
+      &:hover{
+        border: 3px solid white;
+        background-color: white;
+        color: black ;
+      }
+    }
+
+  }
+  .btn{
+    background-color: transparent;
+  }
+}
+
+#historiaModal{
+
+  background-color: $blackTransparent;
+
+  .modal-header{
+    background: $redBlackGradient;
+    border: none;
+  }
+
+  .modal-content {
+    background-color: $fancyBlack;
+    p{
+      font-family: $secondaryFont;
+      font-size: 1.05rem;
+    }
+
+  }
+
+}
+
+footer{
+
+  i{
+    font-size: 1.5em;
+  }
+  p{
+    font-family: $secondaryFont;
+    font-size: 0.9em;
+  }
+}
+
+.invalid-feedback, .valid-feedback{
+  font-family: $secondaryFont;
+}
+
+form input:not([type=button]), form input:not([type=submit]), form select, form select option{
+  font-family: $secondaryFont;
+}
+
+@media only screen and (max-width: 768px) {
+  #section1{
+    .darkenMask{
+      min-height: 50vh;
+    }
+  }
+
+  .carousel{
+    .col-md-4{
+      max-height: 30vh;
+      overflow: auto;
+
+    }
+  }
+
+}
+

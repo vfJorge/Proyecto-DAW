@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="styles/reservarStyles.css" type="text/css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/scriptReservar.js"></script>
+<script src="scripts/cookieMethods.js"></script>
+
+<script type="text/javascript">
+  
+</script>
+
+<title>Reservaciones</title>
+</head>
+
+<body>
+
+<div class="row m-0 p-0 h-100">
+    <div id="izquierda" class="p-0 m-0 text-white col-0 col-lg-7 d-flex flex-column">
+        <div id="titulos" class="p-4">
+            <h1>RESERVACIÓN</h1>
+            <h5>Llene los siguientes campos</h5>
+            <a href="index.html" class="btn btn-dark float-end">Volver</a>
+
+        </div>
+        <div class="p-5 m-0 flex-grow-1 d-flex justify-content-center align-items-center">
+            <form action="#" class="was-validated p-4 d-flex justify-content-center flex-column align-items-center">
+                <div class="mb-3 mt-0 form-group" >
+                    <label for="user-name" class="form-label">Nombre (s):</label>
+                    <input type="text" class="form-control" id="user-name" placeholder="Nombre (s)" name="user-name" required>
+                    <div class="invalid-feedback">Ingrese nombre(s)</div>
+                </div>
+
+                <div class="mb-3 mt-3 form-group" >
+                    <label for="apellido-pat" class="form-label">Apellido paterno</label>
+                    <input type="text" class="form-control" id="apellido-pat" placeholder="Apellido paterno" name="apellido-pat" required>
+                    <div class="invalid-feedback">Debe ingresar un apellido</div>
+                </div>
+
+                <div class="mb-3 mt-3 form-group" >
+                    <label for="apellido-mat" class="form-label">Apellido materno</label>
+                    <input type="text" class="form-control" id="apellido-mat" placeholder="Apellido materno" name="apellido-mat" required>
+                    <div class="invalid-feedback">Debe ingresar un apellido</div>
+                </div>
+
+                <div class="mb-3 mt-3 form-group" >
+                    <label for="celular" class="form-label">Celular:</label>
+                    <input type="tel" class="form-control" id="celular" name="celular" placeholder="0123456789" pattern="[0-9]{10}" required>
+                    <div class="invalid-feedback">Número de teléfono inválido</div>
+                </div>
+
+                <div class="mb-3 mt-3 form-group" >
+                    <label for="email-form" class="form-label">Correo:</label>
+                    <input type="email" class="form-control" id="email-form" placeholder="correo@electronico" name="email" required>
+                    <div class="valid-feedback">Correo electrónico válido</div>
+                    <div class="invalid-feedback">Correo electrónico inválido</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="sucursalSelector" class="form-label">Elija la sucursal:</label>
+                    <select class="form-select" name="sucursalSelector" id="sucursalSelector">
+
+                    </select>
+                </div>
+
+                <div class="mb-3 mt-3 form-group" >
+                    <label for="numero-personas" class="form-label">Mesa para cuántas personas:</label>
+                    <input type="text" class="form-control" id="numero-personas" name="numero-personas" placeholder="Numero de personas" pattern="[1-9]{1}" required>
+                    <div class="invalid-feedback">Debe ingresar un número entre 1 y 9</div>
+                </div>
+
+                <div class="mb-3 mt-3 form-group" >
+                    <label for="fecha" class="form-label">Seleccione fecha:</label>
+                    <input type="date" class="form-control" id="fecha" name="fecha"  min="2021-01-29" max="2023-12-31" required>
+                    <div class="invalid-feedback">Debe seleccionar una fecha válida</div>
+                </div>
+
+                <div class="mb-3 mt-3 form-group" >
+                    <label for="time" class="form-label">Seleccione hora:</label>
+                    <input type="time" class="form-control" step="1" placeholder="11:45:00" max="00:00:00" min="12:00:00"  id="time" name="time" required>
+                    <div class="invalid-feedback">Debe seleccionar una hora válida. Horarios disponibles de 12 PM a 12 AM</div>
+                </div>
+
+
+                <div class="d-grid">
+                    <button type="submit" class="mt-2 p-3 btn-primary btn-block text-center">REGISTRARSE</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="derecha" class="col-12 col-lg-5 m-0 p-5">
+        <div id="reservaciones" class="container-fluid text-white min-vh-100 p-5 bg-image d-flex flex-column align-items-center">
+
+            <h2 class="shadow">¿Ya tienes reservación?</h2>
+            <h6>Ingresa aquí tu código</h6>
+            <form action="#" class="was-validated p-4 d-flex justify-content-center flex-column align-items-center">
+                <div class="mb-3 mt-3 form-group" >
+                    <label for="codigo" class="form-label">Código de reserva:</label>
+                    <input type="text" class="form-control" id="codigo" name="codigo" placeholder="123456" pattern="[0-9]{6}" required>
+                    <div class="invalid-feedback p-1">Número de código inválido. Deben ser 6 números</div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="container d-none">
+
+</div>
+
+</body>
+
+
+
+
+
+</html>

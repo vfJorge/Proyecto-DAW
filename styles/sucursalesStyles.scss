@@ -1,0 +1,55 @@
+@import "mainStyles";
+
+body{
+  height: 100vh;
+}
+
+#cuerpo{
+  height: 100%;
+}
+
+#barraSucursales{
+  overflow: hidden;
+  .bi-bookmark-star-fill{
+    font-size: 1.5rem;
+    color: #fdc007 !important;
+  }
+
+
+  .list-group-item{
+    cursor: pointer;
+    border: $fancyBlack 1px solid;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #263238;
+    color: white;
+    border-radius: 0;
+
+    &:hover{
+      background-color: $buttonColor;
+      color: black;
+    }
+
+  }
+}
+
+#mapaSucursal iframe{
+  border-radius: 15px;
+}
+
+#sucursalImg{
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #barraSucursales{
+    .list-group-item{
+      flex-direction: column;
+    }
+  }
+}
