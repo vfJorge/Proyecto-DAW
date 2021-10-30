@@ -106,10 +106,6 @@ body {
   font-size: 0.8rem;
   background-color: #ED1C24;
 }
-#section3 .carousel {
-  min-width: 100vw !important;
-  max-width: 100vw !important;
-}
 #section3 .carousel img {
   border-radius: 15px;
   object-fit: cover;
@@ -172,6 +168,10 @@ body {
 }
 #historiaModal .modal-content {
   background-color: #131111;
+}
+#historiaModal .modal-content p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.05rem;
 }
 
 footer i {
