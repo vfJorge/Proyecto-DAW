@@ -3,20 +3,8 @@
   src: url(../fonts/Montserrat-Bold.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-$blackTransparent: rgba(0,0,0,0.65);
-$whiteTransparent: rgba(255,255,255,0.45);
-$fancyRed : #ED1C24;
-$mainFont: Montserrat, sans-serif;
-$secondaryFont: 'Lato', sans-serif;
-$background: url(../images/restaurante.png);
-$fancyBlack: #131111;
-$fancyShadow: 0 10px 25px -10px rgba(0, 0, 0, 0.75);
-$buttonColor: #cc741f;
-$orangeGradient: linear-gradient(90deg, rgba(253,69,29,1) 0%, rgba(252,176,69,1) 100%);
-$redBlackGradient: linear-gradient(90deg, rgba(226,26,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);;
-$fancyBlackBlackGradient: linear-gradient(90deg, $fancyBlack 0%, rgba(0,0,0,1) 100%);
+@import "variables";
 
 
 @import "../bootstrap-icons/font/bootstrap-icons.css";
@@ -42,8 +30,19 @@ body{
 }
 
 .userImage{
+  width: 40px;
+  height: 40px;
   cursor: pointer;
+  object-fit: cover;
 }
+
+.userImageOffCanvas{
+  width: 125px;
+  height: 125px;
+  cursor: revert;
+  object-fit: cover;
+}
+
 
 #reservarNav{
   background-color: $buttonColor;
@@ -156,7 +155,7 @@ body{
 
 }
 
-#userInfoOffCanvas{
+#userInfoOffCanvas, #logedInOffCanvas{
 
   box-sizing: border-box;
   p{
@@ -213,6 +212,18 @@ body{
   }
 }
 
+#cambiarFotoModal{
+  .modal-header{
+    background: $orangeGradient;
+    border: none;
+    color: white;
+  }
+  .modal-content {
+    background-color: $fancyBlack;
+    color: white;
+  }
+}
+
 #historiaModal{
 
   background-color: $blackTransparent;
@@ -248,8 +259,64 @@ footer{
   font-family: $secondaryFont;
 }
 
+#cerrarSesion{
+  background-color: $fancyRed !important;
+  border-color: $fancyRed !important;
+}
+
+#borrarCuenta{
+  &:hover{
+    cursor: pointer !important;
+  }
+}
+
 form input:not([type=button]), form input:not([type=submit]), form select, form select option{
   font-family: $secondaryFont;
+}
+
+
+
+.nice-button{
+  cursor:pointer;
+  border: none;
+  color: white;
+  background-color: $buttonColor;
+  &:hover{
+    background-color: white;
+    color:black;
+  }
+}
+
+#fotoSubida{
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#drop_zone{
+  border: dashed 2px $buttonColor;
+}
+
+.divVerPassword{
+  border-radius: 0 5px 5px 0 !important;
+  cursor: pointer;
+  background-color: ghostwhite;
+
+}
+
+.secondaryFont{
+  font-family: $secondaryFont;
+}
+
+.buttonColor{
+  font-family: $mainFont;
+  border: none;
+  background-color: $buttonColor;
+  color: white;
+  &:hover{
+    background-color: white;
+    color:black;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -269,3 +336,20 @@ form input:not([type=button]), form input:not([type=submit]), form select, form 
 
 }
 
+@media only screen and (max-height: 500px) {
+ .offcanvas-header{
+   p{
+     display: none;
+   }
+   div{
+     padding:0;
+   }
+  }
+  .offcanvas-title{
+      display: none;
+
+  }
+  .userImageOffCanvas{
+    display: none;
+  }
+}

@@ -11,28 +11,27 @@ else{
     myObj = JSON.parse(text);
 }
 
-window.onload = function () {
+window.addEventListener("DOMContentLoaded",function () {
     verSucursal(suc);
     loadSucursales();
     document.getElementById("hacerReservacion").onclick = function(){
-        alert("Será manejado en una página php")
-        //location.assign("reservacion.php?suc="+suc); FUNCION RESERVACION
+        location.assign("reservacion.php");
     }
     document.getElementById("addFavoritos").onclick = function (){
         addFavoritos();
     }
-}
+} )
 function verSucursal(i){
     suc = i;
     createCookie("sucursal",suc);
     loadSucursal();
     if(myObj.favoritos[suc-1]===0){
         document.getElementById("addFavoritos").setAttribute("class","btn btn-warning");
-        document.getElementById("addFavoritos").innerHTML = "Añadir a favoritos";
+        document.getElementById("addFavoritos").innerHTML = "Añadir a favoritos de este dispositivo";
     }
     else{
         document.getElementById("addFavoritos").setAttribute("class","btn btn-danger");
-        document.getElementById("addFavoritos").innerHTML = "Quitar de favoritos";
+        document.getElementById("addFavoritos").innerHTML = "Quitar de favoritos de este dispositivo";
     }
 }
 function addFavoritos(){
@@ -41,14 +40,14 @@ function addFavoritos(){
         myJSON = JSON.stringify(myObj);
         localStorage.setItem("sucFav",myJSON);
         document.getElementById("addFavoritos").setAttribute("class","btn btn-danger");
-        document.getElementById("addFavoritos").innerHTML = "Quitar de favoritos";
+        document.getElementById("addFavoritos").innerHTML = "Quitar de favoritos de este dispositivo";
     }
     else if(myObj.favoritos[suc-1]===1){
         myObj.favoritos[suc-1]=0;
         myJSON = JSON.stringify(myObj);
         localStorage.setItem("sucFav",myJSON);
         document.getElementById("addFavoritos").setAttribute("class","btn btn-warning");
-        document.getElementById("addFavoritos").innerHTML = "Añadir a favoritos";
+        document.getElementById("addFavoritos").innerHTML = "Añadir a favoritos de este dispositivo";
     }
     loadSucursales();
 }

@@ -1,0 +1,33 @@
+@import "variables";
+@import "../bootstrap-icons/font/bootstrap-icons.css";
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+a{
+  text-decoration: none;
+}
+
+.mainFont{
+  font-family: $mainFont;
+}
+
+.secondaryFont{
+  font-family: $secondaryFont;
+}
+
+.userImage{
+  width: 70px;
+  height: 70px;
+}
+
+.buttonColor{
+  font-family: $mainFont;
+  border: none;
+  background-color: $buttonColor;
+  color: white;
+  &:hover{
+    background-color: white;
+    color:black;
+  }
+}

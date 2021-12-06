@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import "../bootstrap-icons/font/bootstrap-icons.css";
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+a {
+  text-decoration: none;
+}
+
+.mainFont {
+  font-family: Montserrat, sans-serif;
+}
+
+.secondaryFont {
+  font-family: "Lato", sans-serif;
+}
+
+.userImage {
+  width: 70px;
+  height: 70px;
+}
+
+.buttonColor {
+  font-family: Montserrat, sans-serif;
+  border: none;
+  background-color: #cc741f;
+  color: white;
+}
+.buttonColor:hover {
+  background-color: white;
+  color: black;
+}
+
+/*# sourceMappingURL=crudStyles.css.map */

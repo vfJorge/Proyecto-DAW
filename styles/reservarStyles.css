@@ -13,11 +13,21 @@ body {
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .userImage {
+  width: 40px;
+  height: 40px;
   cursor: pointer;
+  object-fit: cover;
+}
+
+.userImageOffCanvas {
+  width: 125px;
+  height: 125px;
+  cursor: revert;
+  object-fit: cover;
 }
 
 #reservarNav {
@@ -113,27 +123,27 @@ body {
   height: 50vh;
 }
 
-#userInfoOffCanvas {
+#userInfoOffCanvas, #logedInOffCanvas {
   box-sizing: border-box;
 }
-#userInfoOffCanvas p {
+#userInfoOffCanvas p, #logedInOffCanvas p {
   font-family: "Lato", sans-serif;
 }
-#userInfoOffCanvas a {
+#userInfoOffCanvas a, #logedInOffCanvas a {
   font-family: "Lato", sans-serif;
   background-color: transparent;
   border: none;
   color: #cc741f;
 }
-#userInfoOffCanvas a:hover {
+#userInfoOffCanvas a:hover, #logedInOffCanvas a:hover {
   cursor: pointer;
   color: #0a53be;
 }
-#userInfoOffCanvas button:not(.btn-close) {
+#userInfoOffCanvas button:not(.btn-close), #logedInOffCanvas button:not(.btn-close) {
   background: #cc741f;
   border: 3px solid #cc741f;
 }
-#userInfoOffCanvas button:not(.btn-close):hover {
+#userInfoOffCanvas button:not(.btn-close):hover, #logedInOffCanvas button:not(.btn-close):hover {
   border: 3px solid white;
   background-color: white;
   color: black;
@@ -159,8 +169,18 @@ body {
   background-color: transparent;
 }
 
+#cambiarFotoModal .modal-header {
+  background: linear-gradient(90deg, #fd451d 0%, #fcb045 100%);
+  border: none;
+  color: white;
+}
+#cambiarFotoModal .modal-content {
+  background-color: #131111;
+  color: white;
+}
+
 #historiaModal {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 #historiaModal .modal-header {
   background: linear-gradient(90deg, #e21a00 0%, black 85%, black 100%);
@@ -186,8 +206,59 @@ footer p {
   font-family: "Lato", sans-serif;
 }
 
+#cerrarSesion {
+  background-color: #ED1C24 !important;
+  border-color: #ED1C24 !important;
+}
+
+#borrarCuenta:hover {
+  cursor: pointer !important;
+}
+
 form input:not([type=button]), form input:not([type=submit]), form select, form select option {
   font-family: "Lato", sans-serif;
+}
+
+.nice-button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #cc741f;
+}
+.nice-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#fotoSubida {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#drop_zone {
+  border: dashed 2px #cc741f;
+}
+
+.divVerPassword {
+  border-radius: 0 5px 5px 0 !important;
+  cursor: pointer;
+  background-color: ghostwhite;
+}
+
+.secondaryFont {
+  font-family: "Lato", sans-serif;
+}
+
+.buttonColor {
+  font-family: Montserrat, sans-serif;
+  border: none;
+  background-color: #cc741f;
+  color: white;
+}
+.buttonColor:hover {
+  background-color: white;
+  color: black;
 }
 
 @media only screen and (max-width: 768px) {
@@ -198,6 +269,22 @@ form input:not([type=button]), form input:not([type=submit]), form select, form 
   .carousel .col-md-4 {
     max-height: 30vh;
     overflow: auto;
+  }
+}
+@media only screen and (max-height: 500px) {
+  .offcanvas-header p {
+    display: none;
+  }
+  .offcanvas-header div {
+    padding: 0;
+  }
+
+  .offcanvas-title {
+    display: none;
+  }
+
+  .userImageOffCanvas {
+    display: none;
   }
 }
 body {
@@ -224,13 +311,16 @@ body {
 
 #derecha #reservaciones {
   border-radius: 15px;
-  background-image: url(../images/restaurante.png);
-  background-size: cover;
+  background-color: #131111;
 }
 #derecha #reservaciones .form-group .invalid-feedback {
   color: white;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#tablaReservaciones tr, #tablaReservaciones td {
+  font-family: "Lato", sans-serif;
 }
 
 /*# sourceMappingURL=reservarStyles.css.map */

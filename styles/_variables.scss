@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$blackTransparent: rgba(0,0,0,0.90);
+$whiteTransparent: rgba(255,255,255,0.45);
+$fancyRed : #ED1C24;
+$mainFont: Montserrat, sans-serif;
+$secondaryFont: 'Lato', sans-serif;
+$background: url(../images/restaurante.png);
+$fancyBlack: #131111;
+$fancyShadow: 0 10px 25px -10px rgba(0, 0, 0, 0.75);
+$buttonColor: #cc741f;
+$orangeGradient: linear-gradient(90deg, rgba(253,69,29,1) 0%, rgba(252,176,69,1) 100%);
+$redBlackGradient: linear-gradient(90deg, rgba(226,26,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);;
+$fancyBlackBlackGradient: linear-gradient(90deg, $fancyBlack 0%, rgba(0,0,0,1) 100%);

@@ -36,8 +36,7 @@ body{
 #derecha{
   #reservaciones{
     border-radius: 15px;
-    background-image: $background;
-    background-size: cover;
+    background-color: $fancyBlack;
 
     .form-group{
       .invalid-feedback{
@@ -49,4 +48,13 @@ body{
     }
 
   }
+}
+
+
+#tablaReservaciones{
+
+  tr, td{
+    font-family: $secondaryFont;
+  }
+
 }

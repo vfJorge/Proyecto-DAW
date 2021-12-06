@@ -1,70 +1,70 @@
 [
     {
         "nombre": "Sucursal Mérida, Yucatán",
-        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing elit natoque blandit morbi",
+        "descripcion":"",
         "direccion": "Calle 3-A, Vista Alegre Norte, Mérida, Yucatán",
         "ubicacion":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1916.643219869282!2d-89.57624855850635!3d21.026273411474858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567716de63c497%3A0xbd9db3ee1b7c6501!2sC.%203-A%2C%20Vista%20Alegre%20Nte%2C%2097130%20M%C3%A9rida%2C%20Yuc.!5e0!3m2!1ses-419!2smx!4v1635479930997!5m2!1ses-419!2smx",
         "telefono": "9994201337"
     },
     {
         "nombre": "Sucursal Ecatepec, Edo. Méx.",
-        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing elit natoque blandit morbi",
+        "descripcion":"",
         "direccion" : "Fraccionamiento Las Americas, Las Américas, 55076 Ecatepec de Morelos, Méx.",
         "ubicacion" :"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1879.5088672864213!2d-99.02011701303663!3d19.583740885236768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDM1JzAxLjUiTiA5OcKwMDEnMDkuNiJX!5e0!3m2!1ses-419!2smx!4v1635479517609!5m2!1ses-419!2smx",
         "telefono" : "9994211337"
     },
     {
         "nombre": "Sucursal Apizaco, Tlaxcala",
-        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing elit natoque blandit morbi",
+        "descripcion":"",
         "direccion" : "Av Juárez 702C, Jesús y San Juan, 90358 Apizaco, Tlax.",
         "ubicacion" :"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.006434770261!2d-98.14211254911247!3d19.412127946299865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI0JzQzLjYiTiA5OMKwMDgnMjMuNyJX!5e0!3m2!1ses-419!2smx!4v1635479720820!5m2!1ses-419!2smx",
         "telefono" : "9994221337"
     },
     {
         "nombre": "Sucursal Guadalupe, Nuevo León",
-        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing elit natoque blandit morbi",
+        "descripcion":"",
         "direccion" : "Lirio 4016, Rafael Ramírez (U.p.), 67180 Guadalupe, N.L.",
         "ubicacion" :"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.927515600664!2d-100.21834994904124!3d25.673697418422545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c02cdb8148df%3A0x6a69f97da55402df!2sLirio%204016%2C%20Rafael%20Ram%C3%ADrez%20(U.p.)%2C%2067180%20Guadalupe%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1635480166349!5m2!1ses-419!2smx",
         "telefono" : "9994231337"
     },
     {
         "nombre": "Sucursal Sabinas Hidalgo, Nuevo León",
-        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing elit natoque blandit morbi",
+        "descripcion":"",
         "direccion" : "Mina 505, Centro de Sabinas Hidalgo, 65200 Sabinas Hidalgo, N.L.",
         "ubicacion" :"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.4281178571505!2d-100.18156170038287!3d26.506352238384643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86623eb76ded18c3%3A0xb62d6fd70acddd49!2sMina%20505%2C%20Centro%20de%20Sabinas%20Hidalgo%2C%2065200%20Sabinas%20Hidalgo%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1635480261511!5m2!1ses-419!2smx",
         "telefono" : "9994241337"
     },
     {
         "nombre": "Sucursal Campeche, Campeche",
-        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing elit natoque blandit morbi",
+        "descripcion":"",
         "direccion" : "C. Morelos 1, Bellavista (Ampliación), Amp Bellavista, 24020 Campeche, Camp.",
         "ubicacion" :"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938.1656610900221!2d-90.51050811568885!3d19.85422226055932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85f836b4ce587749%3A0xc28c09d296e7e527!2sC.%20Morelos%201%2C%20Bellavista%20(Ampliaci%C3%B3n)%2C%20Amp%20Bellavista%2C%2024020%20Campeche%2C%20Camp.!5e0!3m2!1ses-419!2smx!4v1635480369778!5m2!1ses-419!2smx",
         "telefono" : "9994251337"
     },
     {
         "nombre": "Sucursal La Paz, Baja California Sur",
-        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing elit natoque blandit morbi",
+        "descripcion":"",
         "direccion" : "Cjon. Chiriyaqui 850, Los Olivos, 23040 La Paz, B.C.S.",
         "ubicacion" :"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1820.3936941651484!2d-110.30983191995743!3d24.144103682964733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86afd340681d6d61%3A0x7e687a715d11b4e7!2sCjon.%20Chiriyaqui%20850%2C%20Los%20Olivos%2C%2023040%20La%20Paz%2C%20B.C.S.!5e0!3m2!1ses-419!2smx!4v1635480457466!5m2!1ses-419!2smx",
         "telefono" : "9994261337"
     },
     {
         "nombre": "Sucursal Tijuana, Baja California",
-        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing elit natoque blandit morbi",
+        "descripcion":"",
         "direccion" : "C. Tercera 7171, Zona Centro, 22000 Tijuana, B.C.",
         "ubicacion" :"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.9358076077666!2d-117.04879651186613!3d32.53300412947065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDMxJzU4LjgiTiAxMTfCsDAyJzUzLjciVw!5e0!3m2!1ses-419!2smx!4v1635480776027!5m2!1ses-419!2smx",
         "telefono" : "9994271337"
     },
     {
         "nombre": "Sucursal Zapopan, Jalisco",
-        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing elit natoque blandit morbi",
+        "descripcion":"",
         "direccion" : "C. A las Cumbres 206, Prados Vallarta, 45020 Zapopan, Jal.",
         "ubicacion" :"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d933.2276037381373!2d-103.41781181187638!3d20.673223353882694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae90178ff29d%3A0x48c25b3b31a3c7c9!2sC.%20A%20las%20Cumbres%20206%2C%20Prados%20Vallarta%2C%2045020%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1635480891934!5m2!1ses-419!2smx",
         "telefono" : "9994281337"
     },
     {
         "nombre": "Sucursal Kanasín, Yucatán",
-        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing elit natoque blandit morbi",
+        "descripcion":"",
         "direccion" : "C. 19 255, Pablo Moreno, 97370 Kanasín, Yuc.",
         "ubicacion" :"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d931.5798902439803!2d-89.56855701187621!3d20.93967825165814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567067ed232283%3A0x27e845359a2c2c70!2sC.%2019%20255%2C%20Pablo%20Moreno%2C%2097370%20Kanas%C3%ADn%2C%20Yuc.!5e0!3m2!1ses-419!2smx!4v1635480959945!5m2!1ses-419!2smx",
         "telefono" : "9994291337"
